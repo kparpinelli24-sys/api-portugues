@@ -1,0 +1,213 @@
+# Dependências
+/node_modules
+/node_modules/*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Arquivos de runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diretórios de cache
+.cache
+.parcel-cache
+.next
+.nuxt
+.output
+dist
+build
+.coverage
+.nyc_output
+
+# Arquivos de editor/IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+*.sublime-*
+Thumbs.db
+desktop.ini
+
+# Arquivos de sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+
+# Arquivos de teste/coverage
+/coverage
+.nyc_output
+*.test.js
+*.spec.js
+.coveralls.yml
+
+# Arquivos de build
+*.tgz
+*.tar.gz
+*.rar
+*.zip
+
+# Arquivos de backup
+*.bak
+*.old
+*.orig
+*.rej
+
+# Arquivos específicos do projeto
+.env.backup
+.env.example.backup
+database.sql
+*.sql
+backup.sql
+dump.sql
+
+# Configurações locais
+config.local.js
+config.local.json
+database.local.js
+database.local.json
+
+# Relatórios
+report.html
+report.json
+*.xml
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Arquivos de sessão
+.session
+.sessions
+
+# Arquivos de erro
+error.log
+errors.log
+server.log
+
+# Arquivos do PostgreSQL (se houver dump local)
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+
+# Arquivos do nodemon
+nodemon-debug.log
+
+# Arquivos de debug
+debug.log
+debug.json
+
+# Arquivos de performance
+profile-*.json
+trace-*.json
+
+# Arquivos de deploy
+.vercel
+.netlify
+.heroku
+.elasticbeanstalk
+
+# Arquivos de secrets
+*.pem
+*.key
+*.cert
+*.crt
+.secrets
+secrets.json
+
+# Arquivos do Windows
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Arquivos do Mac
+.AppleDouble
+.LSOverride
+Icon
+
+# Arquivos do Linux
+.directory
+*.directory
+
+# Arquivos de documentação gerados
+/docs/_build
+/docs/api
+
+# Arquivos de pacotes
+*.npm
+*.node
+
+# Arquivos de extensões
+*.vsix
+
+# Arquivos de instalação
+installer.exe
+installer.msi
+*.msi
+*.msm
+*.msp
+
+# Arquivos de mídia (opcional - se não quiser commitar mídia)
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+*.flv
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.svg
+*.pdf
+
+# Arquivos de minificação
+*.min.js
+*.min.css
+*.min.html
+
+# Arquivos de source maps
+*.map
+*.js.map
+*.css.map
