@@ -4,7 +4,7 @@ const routes = require('./Src/Routes');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());

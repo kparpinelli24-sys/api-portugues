@@ -13,6 +13,11 @@ class Questao {
         return result.rows[0];
     }
 
+    static async getByTopico(topicoid) {
+        const result = await pool.query('SELECT * FROM questoes WHERE topicos = $1', [topicoid]);
+        return result.rows;
+    }
+
     // Cria uma nova questão (usando os nomes do seu INSERT SQL)
     static async create(dados) {
         const { topicos, enunciado, resposta, link_topico, dt_inclusao } = dados;

@@ -1,17 +1,17 @@
-const topicosModel = require('../Models/topico');
+const Topico = require('../Models/topico');
 
 const topicoController = {
     // GET /t
     async listar(req, res) {
         try {
-            const topicos = await topicoController.findAll();
+            const topicos = await Topico.findAll();
             res.json(topicos);
         } catch (error) {
             res.status(500).json({ error: error.message });
         }
     },
-};
-    async function listarPorView (req,res){
+
+    async listarPorView (req,res){
     try{
         const topicos = await topicosModel.listarPorView();
         res.status(200).json(topicos);
@@ -21,10 +21,10 @@ const topicoController = {
             erro: erro.message
         });
     }
-}
+},
 
     // GET /t/:id
-    async function buscarPorId(req, res) {
+    async buscarPorId(req, res) {
         try {
             const topico = await Topico.findById(req.params.id);
             if (!topico) {
@@ -34,20 +34,20 @@ const topicoController = {
         } catch (error) {
             res.status(500).json({ error: error.message });
         }
-    }
+    },
 
     // POST /t
-    async function criar(req, res) {
+    async criar(req, res) {
         try {
             const novoTopico = await Topico.create(req.body);
             res.status(201).json({ success: true, data: novoTopico });
         } catch (error) {
             res.status(500).json({ error: error.message });
         }
-    }
+    },
 
     // PUT /t/:id
-    async function atualizar(req, res) {
+    async atualizar(req, res) {
         try {
             const topicoAtualizado = await Topico.update(req.params.id, req.body);
             if (!topicoAtualizado) {
@@ -57,10 +57,10 @@ const topicoController = {
         } catch (error) {
             res.status(500).json({ error: error.message });
         }
-    }
+    },
 
     // DELETE /t/:id
-    async function deletar(req, res) {
+    async deletar(req, res) {
         try {
             const deletado = await Topico.delete(req.params.id);
             if (!deletado) {
@@ -72,12 +72,6 @@ const topicoController = {
             res.status(500).json({ error: "Não é possível deletar um tópico que possui questões associadas." });
         }
     }
+};
 
-module.exports = {
-    topicoController,
-    listarPorView,
-    buscarPorId,
-    criar,
-    atualizar,
-    deletar,
-}
+module.exports = topicoController;
